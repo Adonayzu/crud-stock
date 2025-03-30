@@ -6,9 +6,11 @@ import FormBs from 'react-bootstrap/Form'; // Importamos el componente Form de r
 import './formulario.css'; // Importamos el archivo CSS para estilos personalizados
 import { axiosInstance } from '../../services/axios.config'; // Importamos axiosInstance para realizar peticiones HTTP
 
-function FormCreateProduct() {
-  // Valores iniciales del formulario
-  const initialCredentials = {
+
+const FormCreateProduct = () => {
+  
+   // Valores iniciales del formulario
+   const initialCredentials = {
     name: '',
     description: '',
     image: '',
@@ -150,4 +152,4 @@ function FormCreateProduct() {
   );
 }
 
-export default FormCreateProduct;
+export default FormCreateProduct

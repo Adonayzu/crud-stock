@@ -3,8 +3,8 @@ import TableBs from 'react-bootstrap/Table'; //le cambie nombre para no confundi
 import ItemTable from '../ItemTable/ItemTable';
 
 //se puede asi const Tabla = (props) => {  o
-const Tabla = ({items}) => {
-    console.log(items);
+const Tabla = ({items, editItem}) => {
+   // console.log(items);
    //const { items } = props // Desestructuramos los items de las props
 
   return (
@@ -21,7 +21,7 @@ const Tabla = ({items}) => {
       </thead>
       <tbody>
         {items.map((item, i) => (
-          <ItemTable item={item} key={i} />
+          <ItemTable item={item} key={i} editItem={editItem} />
         ))}
       </tbody>
     </TableBs>
